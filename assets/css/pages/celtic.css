@@ -74,11 +74,30 @@
 }
 
 .contact-info {
-  margin-bottom: var(--content-spacing);
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  margin-top: var(--spacing-xl);
+  text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .contact-info h3 {
   margin-bottom: var(--heading-content-spacing);
+}
+
+.contact-info p {
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-info .btn {
+  margin-top: var(--spacing-md);
+  display: inline-block;
+  word-break: break-all;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
 }
 
 .coach-card {
@@ -95,20 +114,18 @@
 .coach-card h4 {
   color: var(--primary);
   margin-bottom: var(--spacing-xs);
-  white-space: nowrap;
 }
 
 .coach-card .role {
   color: var(--text-dark);
   font-weight: 600;
   margin-bottom: var(--spacing-md);
-  white-space: nowrap;
 }
 
 .coach-card .btn {
   margin-top: var(--spacing-md);
-  display: inline-block;
-  white-space: nowrap;
+  word-break: break-all;
+  max-width: 100%;
+  white-space: normal;
   text-align: center;
-  min-width: 100px;
 }
