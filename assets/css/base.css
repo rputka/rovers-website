@@ -1,0 +1,98 @@
+:root {
+  /* Color Palette */
+  --primary: #800020;    /* Maroon */
+  --primary-dark: #600018; /* Darker Maroon */
+  --secondary: #ffd700;  /* Gold */
+  --secondary-dark: #e6c200; /* Darker Gold */
+  --accent: #000000;     /* Black */
+  --text-dark: #333333;
+  --text-light: #ffffff; /* White */
+  --background: #ffffff; /* White */
+  --background-alt: #f5f5f5;
+  
+  /* Typography */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 2rem;     /* 32px */
+  --spacing-xl: 4rem;     /* 64px */
+  
+  /* Layout Spacing */
+  --header-content-spacing: 3rem;    /* Space between header and first content */
+  --heading-content-spacing: 2rem;   /* Space between headings and content */
+  --content-spacing: 2rem;           /* Space between content blocks */
+  --footer-spacing: 4rem;            /* Space between last content and footer */
+  
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Layout Spacing Rules */
+.page-header {
+  margin-bottom: var(--header-content-spacing);
+}
+
+section {
+  margin-bottom: var(--content-spacing);
+}
+
+section:last-of-type {
+  margin-bottom: var(--footer-spacing);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.card {
+  margin-bottom: var(--content-spacing);
+}
+
+.card:last-child {
+  margin-bottom: 0;
+} 

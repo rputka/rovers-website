@@ -1,0 +1,106 @@
+/* Celtic Elite Page Styles */
+.page-header {
+  margin-bottom: var(--header-content-spacing);
+}
+
+.celtic-content {
+  margin-bottom: var(--content-spacing);
+}
+
+.celtic-content .card {
+  padding: var(--spacing-xl);
+}
+
+.program-intro {
+  margin-bottom: var(--content-spacing);
+}
+
+.program-intro h2 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.program-intro .lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.program-intro .grid-2 {
+  gap: var(--content-spacing);
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 200px;
+  height: auto;
+}
+
+.celtic-content .team-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.celtic-content .team-photo img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.season-info {
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  margin-bottom: var(--content-spacing);
+}
+
+.season-info h3 {
+  color: var(--primary);
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.season-info p {
+  margin-bottom: 0;
+}
+
+.contact-info {
+  margin-bottom: var(--content-spacing);
+}
+
+.contact-info h3 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.coach-card {
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.coach-card h4 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.coach-card .role {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.coach-card .btn {
+  margin-top: var(--spacing-md);
+}

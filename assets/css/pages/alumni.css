@@ -1,0 +1,131 @@
+/* Alumni Page Styles */
+.page-header {
+  margin-bottom: var(--header-content-spacing);
+}
+
+.alumni-content {
+  margin-bottom: var(--content-spacing);
+}
+
+.alumni-content .card {
+  position: relative;
+  padding: var(--spacing-xl);
+}
+
+.new-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background-color: var(--secondary);
+  color: var(--text-dark);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transform: rotate(5deg);
+}
+
+.alumni-content h2 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.alumni-content .lead {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.alumni-content h3 {
+  color: var(--primary);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.alumni-content ul {
+  list-style: none;
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.alumni-content ul li {
+  position: relative;
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.alumni-content ul li::before {
+  content: "•";
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+.video-container {
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.video-container h3 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.alumni-details {
+  margin-top: var(--spacing-lg);
+}
+
+.alumni-details .grid-2 {
+  gap: var(--content-spacing);
+  align-items: start;
+}
+
+.contact-info {
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  margin-top: var(--spacing-xl);
+  text-align: center;
+}
+
+.contact-info h3 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.contact-info p {
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-info .btn {
+  margin-top: var(--spacing-md);
+  display: inline-block;
+}
+
+.alumni-content .team-photo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alumni-content .team-photo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+} 

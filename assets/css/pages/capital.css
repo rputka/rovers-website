@@ -1,0 +1,97 @@
+/* Capital Fund Page Styles */
+.page-header {
+  margin-bottom: var(--header-content-spacing);
+}
+
+.capital-content {
+  margin-bottom: var(--content-spacing);
+}
+
+.capital-content .card {
+  padding: var(--spacing-xl);
+}
+
+.capital-content h2 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.capital-content h3 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.capital-content .donate-button {
+  margin-bottom: var(--spacing-lg);
+}
+
+.capital-content .donate-button .btn {
+  font-size: 1.25rem;
+  padding: var(--spacing-md) var(--spacing-xl);
+}
+
+.capital-content .qr-code {
+  text-align: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.capital-content .qr-code img {
+  max-width: 180px;
+  width: 100%;
+  margin-bottom: var(--spacing-md);
+}
+
+.capital-content .alert {
+  background: var(--background-alt);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.capital-content blockquote {
+  margin: var(--spacing-lg) 0;
+  padding-left: var(--spacing-md);
+  border-left: 4px solid var(--primary);
+  background: var(--background-alt);
+}
+
+.capital-content .carousel {
+  max-width: 540px;
+  margin: var(--spacing-xl) auto;
+  text-align: center;
+  position: relative;
+}
+
+.capital-content .carousel img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.capital-content .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.3em 0.6em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.capital-content .carousel-button.prev {
+  left: 0;
+}
+
+.capital-content .carousel-button.next {
+  right: 0;
+}
+
+.capital-content .carousel-indicator {
+  margin-top: var(--spacing-sm);
+  font-size: 1rem;
+  color: #555;
+} 

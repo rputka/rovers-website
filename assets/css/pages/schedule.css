@@ -1,0 +1,182 @@
+/* Schedule Tabs and Sections */
+.schedule-section {
+  display: none;
+  margin-bottom: var(--content-spacing);
+}
+
+.schedule-section.active {
+  display: block;
+}
+
+.schedule-nav {
+  background: var(--background);
+  padding: var(--spacing-md) 0;
+  margin-bottom: var(--content-spacing);
+}
+
+.schedule-tabs {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+.schedule-tabs button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.schedule-tabs button.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* Consistent styling for schedule tab content */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--content-spacing);
+}
+
+.card,
+.match-card,
+.tournament-card,
+.event-card {
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-lg);
+}
+
+.card h3,
+.match-card h3,
+.tournament-card h3,
+.event-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.card .date,
+.card .match-date,
+.match-card .match-date,
+.tournament-card .date,
+.event-card .date {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.card .location,
+.card .type,
+.card .description,
+.match-card .location,
+.match-card .type,
+.tournament-card .location,
+.tournament-card .type,
+.tournament-card .description,
+.event-card .location,
+.event-card .type,
+.event-card .description {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Consistent button color for schedule tab buttons */
+.schedule-section .btn,
+.schedule-section .btn-primary,
+.schedule-section .btn-secondary {
+  background: var(--primary);
+  color: #fff;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+
+.schedule-section .btn:hover,
+.schedule-section .btn-primary:hover,
+.schedule-section .btn-secondary:hover {
+  background: var(--secondary);
+  color: var(--primary);
+  border-color: var(--secondary);
+}
+
+.match-date {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.match-teams {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.match-teams .team {
+  flex: 1;
+  text-align: center;
+}
+
+.match-teams .vs {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.match-details {
+  color: var(--text-dark);
+}
+
+.match-details p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.match-details p:last-child {
+  margin-bottom: 0;
+}
+
+.tournament-card h3 {
+  margin-bottom: 1rem;
+}
+
+.tournament-details p {
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.calendar-download {
+  background: var(--background);
+  margin-top: var(--content-spacing);
+}
+
+.calendar-download h2 {
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.calendar-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.calendar-buttons .btn {
+  padding: 0.75rem 1.5rem;
+}
+
+.calendar-download .card p {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-header {
+  margin-bottom: var(--header-content-spacing);
+}
+
+.schedule-section h2 {
+  margin-bottom: var(--heading-content-spacing);
+} 

@@ -1,0 +1,114 @@
+/* Fire 7s Page Styles */
+.page-header {
+  margin-bottom: var(--header-content-spacing);
+}
+
+.fire-content {
+  margin-bottom: var(--content-spacing);
+}
+
+.fire-content h2 {
+  color: var(--primary);
+  margin-bottom: var(--heading-content-spacing);
+  text-align: center;
+}
+
+.fire-content .card {
+  padding: var(--spacing-xl);
+}
+
+.fire-content .grid-2 {
+  gap: var(--content-spacing);
+  align-items: center;
+  min-height: 300px;
+}
+
+.event-info {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.event-info h2 {
+  color: var(--primary);
+  margin-bottom: var(--heading-content-spacing);
+  text-align: center;
+}
+
+.event-details {
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.event-location h3 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.event-date {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.event-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.fire-content .team-photo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fire-content .team-photo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: var(--content-spacing);
+}
+
+.contact-info h3 {
+  color: var(--primary);
+  margin-bottom: var(--heading-content-spacing);
+}
+
+.contact-info p {
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-card {
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-card h4 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.contact-card p {
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-card .btn {
+  margin-top: var(--spacing-md);
+} 
