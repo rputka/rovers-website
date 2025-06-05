@@ -1,5 +1,21 @@
-// Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', () => {
+// Template Loading
+async function loadTemplate(elementId, templatePath) {
+  try {
+    const response = await fetch(templatePath);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const html = await response.text();
+    document.getElementById(elementId).innerHTML = html;
+  } catch (error) {
+    console.error(`Error loading template ${templatePath}:`, error);
+  }
+}
+
+// Load templates when DOM is ready
+document.addEventListener('DOMContentLoaded', async () => {
+  // Load navbar and footer templates
+  await loadTemplate('navbar-template', '/templates/navbar.html');
+  await loadTemplate('footer-template', '/templates/footer.html');
+
   const mobileMenuButton = document.querySelector('.mobile-menu-button');
   const navMenu = document.querySelector('.nav-menu');
 

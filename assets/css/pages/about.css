@@ -59,7 +59,12 @@
 }
 
 .about-content .card .btn {
+    display: inline-block;
+    width: auto;
     margin-top: var(--spacing-md);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .about-content address {

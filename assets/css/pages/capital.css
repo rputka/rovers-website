@@ -26,6 +26,7 @@
 .capital-content .donate-button .btn {
   font-size: 1.25rem;
   padding: var(--spacing-md) var(--spacing-xl);
+  white-space: nowrap;
 }
 
 .capital-content .qr-code {
