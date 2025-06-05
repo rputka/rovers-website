@@ -18,6 +18,89 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Capital Fund Carousel and Modal
+  const capdevCarousel = document.getElementById('capdev-carousel');
+  if (capdevCarousel) {
+    const total = 11;
+    let current = 1;
+    const img = document.getElementById('capdev-img');
+    const prev = document.getElementById('capdev-prev');
+    const next = document.getElementById('capdev-next');
+    const indicator = document.getElementById('capdev-indicator');
+    
+    // Modal elements
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalPrev = document.getElementById('modal-prev');
+    const modalNext = document.getElementById('modal-next');
+    const closeBtn = document.querySelector('.modal-close');
+
+    function update() {
+      const newSrc = `../assets/images/capdev${current}.png`;
+      img.src = newSrc;
+      img.alt = `Capital Fund Photo ${current}`;
+      indicator.textContent = `Photo ${current} of ${total}`;
+    }
+
+    function updateModal() {
+      modalImg.src = `../assets/images/capdev${current}.png`;
+      modalImg.alt = `Enlarged Capital Fund Photo ${current}`;
+    }
+
+    // Carousel navigation
+    prev.onclick = function() {
+      current = current === 1 ? total : current - 1;
+      update();
+    };
+    next.onclick = function() {
+      current = current === total ? 1 : current + 1;
+      update();
+    };
+
+    // Modal navigation
+    modalPrev.onclick = function(e) {
+      e.stopPropagation();
+      current = current === 1 ? total : current - 1;
+      updateModal();
+    };
+    modalNext.onclick = function(e) {
+      e.stopPropagation();
+      current = current === total ? 1 : current + 1;
+      updateModal();
+    };
+
+    // Open modal when clicking carousel image
+    img.onclick = function() {
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+      updateModal();
+    };
+
+    // Close modal
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // Restore scrolling
+    };
+
+    // Close modal when clicking outside the image
+    modal.onclick = function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = ""; // Restore scrolling
+      }
+    };
+
+    // Close modal with escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = ""; // Restore scrolling
+      }
+    });
+
+    update();
+  }
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

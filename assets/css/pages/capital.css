@@ -66,6 +66,12 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.capital-content .carousel img:hover {
+  transform: scale(1.02);
 }
 
 .capital-content .carousel-button {
@@ -94,4 +100,107 @@
   margin-top: var(--spacing-sm);
   font-size: 1rem;
   color: #555;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+.modal-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5em 0.8em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background-color 0.2s ease;
+}
+
+.modal-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-button.prev {
+  left: 20px;
+}
+
+.modal-button.next {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .modal-button {
+    padding: 0.3em 0.6em;
+    font-size: 1.5rem;
+  }
+  
+  .modal-button.prev {
+    left: 10px;
+  }
+  
+  .modal-button.next {
+    right: 10px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+  }
 } 
