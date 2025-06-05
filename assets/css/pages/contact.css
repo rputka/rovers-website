@@ -58,7 +58,10 @@
 }
 
 .contact-form button[type="submit"] {
-    margin-top: auto;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 1.2rem;
+    width: 100%;
 }
 
 .form-group {
