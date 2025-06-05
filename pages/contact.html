@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleveland Rovers RFC - Contact Us</title>
-    <meta name="description" content="Get in touch with Cleveland Rovers RFC - Join the team, become a sponsor, or learn more about our programs">
+    <title>Contact | Cleveland Rovers RFC</title>
+    <meta name="description" content="Get in touch with the Cleveland Rovers Rugby Football Club">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
@@ -16,6 +16,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/contact.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -45,7 +46,7 @@
                 <a href="/pages/capital-fund.html" class="nav-link">CAPITAL DEVELOPMENT FUND</a>
                 <a href="https://www.oneills.com/us_en/shop-by-team/rugby/rugby-union/cleveland-rovers-rfc.html" class="nav-link" target="_blank" rel="noopener">TEAM SHOP</a>
                 <a href="/pages/partners.html" class="nav-link">PARTNERS</a>
-                <a href="/pages/contact.html" class="nav-link">CONTACT</a>
+                <a href="/pages/contact.html" class="nav-link active">CONTACT</a>
             </div>
         </div>
     </nav>
@@ -53,73 +54,52 @@
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1>Get in touch with the Rovers!</h1>
+            <h1>GET IN TOUCH WITH THE ROVERS</h1>
         </div>
     </header>
 
-    <!-- Contact Form Section -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-form">
-                    <h2>Send Us a Message</h2>
-                    <form id="contact-form" action="https://formspree.io/f/mnnvnydz" method="POST">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-cards">
-                    <div class="contact-card">
-                        <h3>Club Location</h3>
-                        <p>Impett Park</p>
-                        <p>3207 West 153rd Street</p>
-                        <p>Cleveland OH 44111</p>
-                        <a href="https://www.google.com/maps/place/Impett+Park/@41.465576,-81.8026071,17z/data=!4m15!1m8!3m7!1s0x8830ed8b1b2c070f:0x386dd9ab66406613!2s3207+W+153rd+St,+Cleveland,+OH+44111!3b1!8m2!3d41.465576!4d-81.8026071!16s%2Fg%2F11c22g2jh_!3m5!1s0x8830ed897d3aeecf:0xdc69ce6bf6990ac5!8m2!3d41.4656459!4d-81.8057847!16s%2Fg%2F1tcw482r?entry=ttu&g_ep=EgoyMDI1MDYwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-secondary">Get Directions</a>
-                    </div>
-                    <div class="contact-card">
-                        <h3>Practice Schedule</h3>
-                        <p>Tuesday & Thursday</p>
-                        <p>6:00 PM - 8:00 PM</p>
-                        <p>Saturday (Match Days)</p>
-                        <p>Times Vary</p>
-                    </div>
-                    <div class="contact-card">
-                        <h3>Direct Contact</h3>
-                        <p>Email: clevelandrovers@gmail.com</p>
-                    </div>
-                </div>
+    <!-- Main Content -->
+    <main class="contact-main">
+        <section class="contact-form-section">
+            <h2>Send us a message</h2>
+            <form class="contact-form" action="https://formspree.io/f/mnnvnydz" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <aside class="contact-info-cards">
+            <div class="info-card club-location">
+                <h3>Pitch Location</h3>
+                <p>Impett Park<br>3207 West 153rd Street<br>Cleveland OH 44111</p>
             </div>
-        </div>
-    </section>
+            <div class="info-card practice-schedule">
+                <h3>Practice Schedule</h3>
+                <p>Tues & Thurs, 6-8pm</p>
+            </div>
+            <div class="info-card direct-contact">
+                <h3>Direct Contact</h3>
+                <p><a href="mailto:clevelandrovers@gmail.com">clevelandrovers@gmail.com</a></p>
+            </div>
+        </aside>
+    </main>
 
-    <!-- Map Section -->
-    <section class="map">
-        <div class="container">
-            <div class="map-content">
-                <h2>Find Us</h2>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.78188194937!2d-81.80835962314306!3d41.46564587129028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830ed897d3aeecf%3A0xdc69ce6bf6990ac5!2sImpett%20Park!5e0!3m2!1sen!2sus!4v1749137617859!5m2!1sen!2sus" 
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
+    <section class="contact-map-section">
+        <div class="map-container">
+            <h2 class="visually-hidden">Map</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-81.8083596!3d41.4656459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830ed897d3aeecf%3A0xdc69ce6bf6990ac5!2sImpett%20Park!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
@@ -185,4 +165,4 @@
     <!-- Scripts -->
     <script src="../assets/js/main.js"></script>
 </body>
-</html> 
+</html>

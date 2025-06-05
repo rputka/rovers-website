@@ -79,17 +79,60 @@
 }
 
 .contact-info {
-  text-align: center;
-  margin-top: var(--content-spacing);
+  margin-bottom: var(--content-spacing);
 }
 
 .contact-info h3 {
-  color: var(--primary);
   margin-bottom: var(--heading-content-spacing);
+}
+
+.coach-card {
+  background-color: var(--background-alt);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.coach-card h4 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.coach-card .role {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.coach-card .btn {
+  margin-top: var(--spacing-md);
+  word-break: break-all;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
 }
 
 .contact-info p {
   margin-bottom: var(--spacing-md);
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info strong {
+  color: var(--primary);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.contact-info .btn {
+  margin-top: var(--spacing-md);
 }
 
 .contact-card {
