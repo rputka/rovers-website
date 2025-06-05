@@ -98,6 +98,8 @@
   border-radius: 8px;
   margin-top: var(--spacing-xl);
   text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .contact-info h3 {
@@ -111,6 +113,10 @@
 .contact-info .btn {
   margin-top: var(--spacing-md);
   display: inline-block;
+  word-break: break-all;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
 }
 
 .alumni-content .team-photo {

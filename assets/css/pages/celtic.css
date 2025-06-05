@@ -88,6 +88,8 @@
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .coach-card h4 {
@@ -103,4 +105,8 @@
 
 .coach-card .btn {
   margin-top: var(--spacing-md);
+  word-break: break-all;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
 }
