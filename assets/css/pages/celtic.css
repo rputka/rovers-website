@@ -95,18 +95,19 @@
 .coach-card h4 {
   color: var(--primary);
   margin-bottom: var(--spacing-xs);
+  white-space: nowrap;
 }
 
 .coach-card .role {
   color: var(--text-dark);
   font-weight: 600;
   margin-bottom: var(--spacing-md);
+  white-space: nowrap;
 }
 
 .coach-card .btn {
   margin-top: var(--spacing-md);
-  word-break: break-all;
-  max-width: 100%;
-  white-space: normal;
+  display: inline-block;
+  white-space: nowrap;
   text-align: center;
 }
