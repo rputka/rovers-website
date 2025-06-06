@@ -8,15 +8,15 @@
 }
 
 .dues-content .card {
-  padding: var(--spacing-xl);
+  padding: var(--spacing-lg) var(--spacing-xl);
 }
 
 .dues-content h2 {
-  margin-bottom: var(--heading-content-spacing);
+  margin-bottom: var(--spacing-lg);
 }
 
 .dues-content h3 {
-  margin-bottom: var(--heading-content-spacing);
+  margin-bottom: var(--spacing-lg);
 }
 
 .dues-content .donate-buttons {

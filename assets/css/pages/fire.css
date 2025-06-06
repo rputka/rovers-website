@@ -14,7 +14,7 @@
 }
 
 .fire-7s-content .card {
-  padding: var(--spacing-xl);
+  padding: var(--spacing-lg) var(--spacing-xl);
 }
 
 .fire-7s-content .grid-2 {

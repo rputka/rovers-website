@@ -8,15 +8,15 @@
 }
 
 .capital-content .card {
-  padding: var(--spacing-xl);
+  padding: var(--spacing-lg) var(--spacing-xl);
 }
 
 .capital-content h2 {
-  margin-bottom: var(--heading-content-spacing);
+  margin-bottom: var(--spacing-lg);
 }
 
 .capital-content h3 {
-  margin-bottom: var(--heading-content-spacing);
+  margin-bottom: var(--spacing-lg);
 }
 
 .capital-content .donate-button {
