@@ -7,19 +7,15 @@
   margin-bottom: var(--content-spacing);
 }
 
-.alumni-content h2 {
-  margin-bottom: var(--heading-content-spacing);
-  color: var(--text-dark);
-}
-
-.alumni-content .section-title {
-  margin-top: var(--content-spacing);
-}
-
 .alumni-content .card {
   position: relative;
   padding: var(--spacing-lg) var(--spacing-xl);
   margin-bottom: var(--content-spacing);
+}
+
+.alumni-content .card h2 {
+  margin-bottom: var(--heading-content-spacing);
+  color: var(--text-dark);
 }
 
 .new-badge {
@@ -47,10 +43,12 @@
   margin-bottom: var(--heading-content-spacing);
 }
 
-.alumni-content h3 {
-  color: var(--primary);
+.alumni-content h2 {
+  color: var(--text-dark);
+}
+
+.alumni-content .section-title {
   margin-top: var(--content-spacing);
-  margin-bottom: var(--heading-content-spacing);
 }
 
 .alumni-content ul {
