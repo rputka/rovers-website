@@ -65,7 +65,7 @@
 }
 
 .season-info h3 {
-  color: var(--primary);
+  color: black;
   margin-bottom: var(--heading-content-spacing);
 }
 

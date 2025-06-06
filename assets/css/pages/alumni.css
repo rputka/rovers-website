@@ -41,6 +41,7 @@
 .alumni-details h3.lead {
   margin-top: 0;
   margin-bottom: var(--heading-content-spacing);
+  color: black;
 }
 
 .alumni-content h2 {
