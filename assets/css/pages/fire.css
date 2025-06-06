@@ -3,21 +3,21 @@
   margin-bottom: var(--header-content-spacing);
 }
 
-.fire-content {
+.fire-7s-content {
   margin-bottom: var(--content-spacing);
 }
 
-.fire-content h2 {
+.fire-7s-content h2 {
   color: var(--primary);
   margin-bottom: var(--heading-content-spacing);
   text-align: center;
 }
 
-.fire-content .card {
+.fire-7s-content .card {
   padding: var(--spacing-xl);
 }
 
-.fire-content .grid-2 {
+.fire-7s-content .grid-2 {
   gap: var(--content-spacing);
   align-items: center;
   min-height: 300px;
@@ -61,14 +61,14 @@
   margin-bottom: var(--spacing-md);
 }
 
-.fire-content .team-photo {
+.fire-7s-content .team-photo {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.fire-content .team-photo img {
+.fire-7s-content .team-photo img {
   width: 100%;
   max-width: 300px;
   height: auto;
