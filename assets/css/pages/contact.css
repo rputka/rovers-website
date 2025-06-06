@@ -70,7 +70,7 @@ body {
 
 .contact-info-cards {
   flex: 1;
-  min-width: 300px; /* Minimum width before wrapping */
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
@@ -81,7 +81,7 @@ body {
   padding: var(--spacing-md);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  word-wrap: break-word; /* Ensures long text wraps */
+  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .info-card a {
-  word-break: break-all; /* Ensures email addresses wrap properly */
+  word-break: break-all;
 }
 
 .contact-map-section {

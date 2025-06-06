@@ -226,11 +226,21 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Highlight active nav link
   const navLinks = document.querySelectorAll('.nav-link');
   const currentPath = window.location.pathname.replace(/\/index\.html$/, '/');
+  const affiliatedTeamPages = ['/pages/alumni.html', '/pages/celtic-elite.html', '/pages/fire-7s.html'];
+  
   navLinks.forEach(link => {
     if (link.getAttribute('href') === currentPath || (link.getAttribute('href') === '/' && currentPath === '/')) {
       link.classList.add('active');
     }
   });
+
+  // Highlight affiliated teams dropdown when on an affiliated team page
+  if (affiliatedTeamPages.includes(currentPath)) {
+    const navDropdownToggle = document.querySelector('.nav-dropdown-toggle');
+    if (navDropdownToggle) {
+      navDropdownToggle.classList.add('active');
+    }
+  }
 
   // Footer dropdown functionality
   const footerDropdowns = document.querySelectorAll('.footer-dropdown');
