@@ -41,7 +41,7 @@
 .alumni-details h3.lead {
   margin-top: 0;
   margin-bottom: var(--heading-content-spacing);
-  color: black;
+  color: var(--primary);
 }
 
 .alumni-content h2 {
@@ -83,6 +83,7 @@
 .alumni-details h3 {
   margin-top: var(--content-spacing);
   margin-bottom: var(--spacing-md);
+  color: var(--primary);
 }
 
 .alumni-details ul {
