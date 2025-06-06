@@ -280,4 +280,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     }
   });
+
+  // Handle scroll indicator visibility
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  if (scrollIndicator) {
+    let hasScrolled = false;
+    
+    window.addEventListener('scroll', function() {
+      if (!hasScrolled) {
+        scrollIndicator.classList.add('hidden');
+        hasScrolled = true;
+      }
+    });
+  }
 }); 
